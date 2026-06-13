@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+    .top-div1{
+        display:grid;
+        grid-template-columns: 200px 75px;
+    }
+
+    .column1{
+        background-color:lightblue;;
+        color:black;
+        text-align:center;
+    }
+    .column2{
+        background-color:lightcoral;
+        color:black;
+        text-align:center;
+    }
+
+    .top-div2{
+        display:grid;
+        grid-template-columns: 50px auto 75px;
+    }
+
+    .col1{
+        background-color:lightblue;;
+        color:black;
+        text-align:center;
+    }
+    .col2{
+        background-color:lightcoral;
+        color:black;
+        text-align:center;
+    }
+    .col3{
+        background-color:lightgreen;
+        color:black;
+        text-align:center;
+    }
+     
+
+    .top-div3{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px 10px;
+    }
+
+    .col{
+        background-color:rgb(255, 120, 120);
+        color:black;
+        text-align:center;
+    }
+
+    p{
+        margin: 20px;
+        color:#fff;
+    }
+</style>
+<body>
+    <p>two columns with widths of 200px and 75px</p>
+     <div class="top-div1">
+         <div class="column1">200px</div>
+         <div class="column2">75px</div>
+     </div>
+
+     <p>grid with three columns.widths=50px | remaining space | 75px</p>
+   <div class="top-div2">
+        <div class="col1">col1</div>
+        <div  class="col2">col2</div>
+        <div  class="col3">col3</div>
+   </div>
+
+   <p>grid with 4 equal columns that take up equal entire page.<br>
+      space between columns is 20px, space between rows is 10px.
+   </p>
+   <div class="top-div3">
+    <div class="col">col1</div>
+    <div class="col">col2</div>
+    <div class="col">col3</div>
+    <div class="col">col4</div>
+    <div class="col">col1</div>
+    <div class="col">col2</div>
+    <div class="col">col3</div>
+    <div class="col">col4</div>
+   </div>
+</body>
+</html>
